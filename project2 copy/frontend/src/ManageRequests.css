@@ -1,0 +1,257 @@
+/* General Container */
+.manage-requests-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Ensure positioning context */
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+.no-requests {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Request List */
+.requests-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.request-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.request-item:hover {
+    border-color: #007bff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.request-item.active {
+    border-color: #007bff;
+    background-color: #e6f7ff;
+}
+
+/* Place the details menu at the top */
+.request-details {
+    position: fixed; /* Fix to the top of the screen */
+    top: 10px; /* Adjust the distance from the top */
+    left: 50%;
+    transform: translateX(-50%); /* Center it horizontally */
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it appears above other content */
+    width: 90%; /* Adjust width for responsiveness */
+    max-width: 500px; /* Cap width for larger screens */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Buttons */
+.button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.agree-button {
+    background-color: #28a745;
+}
+
+.agree-button:hover {
+    background-color: #218838;
+}
+
+.update-button {
+    background-color: #ffc107;
+}
+
+.update-button:hover {
+    background-color: #e0a800;
+}
+
+.deny-button {
+    background-color: #dc3545;
+}
+
+.deny-button:hover {
+    background-color: #c82333;
+}
+
+/* Align buttons at the bottom */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Calendar Styling */
+/* General Calendar Styling */
+.react-calendar {
+    margin: 20px auto;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Month Name Styling */
+.react-calendar__navigation__label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff; /* Change this color to the desired one */
+    text-align: center;
+}
+
+/* Adjust hover effect for the navigation arrows */
+.react-calendar__navigation button {
+    background: none;
+    border: none;
+    color: #007bff; /* Match the color of the month name for consistency */
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.react-calendar__navigation button:hover {
+    color: #0056b3;
+}
+
+/* Weekdays Styling */
+.react-calendar__month-view__weekdays {
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}
+
+/* Calendar Tiles */
+.react-calendar__tile {
+    text-align: center;
+    padding: 15px;
+    background: none;
+    border: none;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.react-calendar__tile:hover {
+    background-color: #e6f7ff;
+    color: #007bff;
+}
+
+/* Selected Dates */
+.react-calendar__tile.selected-date {
+    background-color: #007bff !important;
+    color: white !important;
+    border-radius: 50%;
+}
+
+.react-calendar__tile.selected-date:hover {
+    background-color: #0056b3 !important;
+    color: white !important;
+}
+
+/* Close Button */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-button:hover {
+    background-color: #c82333;
+}
+
+
+/* Message Box */
+.message-box {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 10px;
+    resize: none;
+}
+
+.message-box:focus {
+    border-color: #007bff;
+    outline: none;
+}

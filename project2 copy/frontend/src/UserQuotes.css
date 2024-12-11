@@ -1,0 +1,87 @@
+/* Container for user quotes */
+.user-quotes-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Quote card style */
+.quote-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Title of the quote */
+.quote-title {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+/* Calendar section */
+.calendar-section {
+    margin-top: 15px;
+}
+
+.react-calendar {
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Selected date on the calendar */
+.react-calendar__tile.admin-selected-date {
+    background-color: #d1e7ff;
+    color: #004085;
+    border-radius: 50%;
+}
+
+.react-calendar__tile.admin-selected-date:hover {
+    background-color: #c4ddff;
+    color: #003e73;
+}
+
+/* Counter offer section */
+.counter-offer-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.counter-offer-input,
+.counter-offer-message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Buttons */
+.accept-offer-button,
+.counter-offer-button {
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Accept offer button */
+.accept-offer-button {
+    background-color: #28a745;
+}
+
+/* Counter offer button */
+.counter-offer-button {
+    background-color: #ffc107;
+}
